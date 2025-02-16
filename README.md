@@ -2,12 +2,15 @@
 
 ## CNN Architecture Used
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/b508d3e5-23a0-430c-ab65-f3ea1dc8bcb0" />
-
-
-
-
 <img src="https://github.com/user-attachments/assets/8f72a97d-c298-49d1-a3aa-87ff630e36e6" alt="image" width="900" height="200" />
+
+
+
+
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/b508d3e5-23a0-430c-ab65-f3ea1dc8bcb0" />
+
+
 
 
 ### Conv Blocks:
