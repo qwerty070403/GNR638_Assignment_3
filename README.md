@@ -8,9 +8,6 @@
 
 
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/b508d3e5-23a0-430c-ab65-f3ea1dc8bcb0" />
-
-
 
 
 ### Conv Blocks:
@@ -19,6 +16,9 @@
 - **Conv Block 3**: Conv (kernel size ( k x k )) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
 - **GlobalAveragePooling2D + Fully Connected Layers (Dropout included)**
 - **Softmax Activation for Classification**
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/b508d3e5-23a0-430c-ab65-f3ea1dc8bcb0" />
+
 
 ## Experiment Details
 
