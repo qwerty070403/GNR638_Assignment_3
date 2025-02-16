@@ -7,7 +7,7 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/8f72a97d-c298-49d1-a3aa-87ff630e36e6" alt="image" width="604" height="200" />
+<img src="https://github.com/user-attachments/assets/8f72a97d-c298-49d1-a3aa-87ff630e36e6" alt="image" width="900" height="200" />
 
 
 ### Conv Blocks:
