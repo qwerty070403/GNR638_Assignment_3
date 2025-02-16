@@ -7,7 +7,7 @@
 
 
 
-<img width="604" alt="image" src="https://github.com/user-attachments/assets/8f72a97d-c298-49d1-a3aa-87ff630e36e6" />
+<img width="604", height="200" alt="image" src="https://github.com/user-attachments/assets/8f72a97d-c298-49d1-a3aa-87ff630e36e6" />
 
 ### Conv Blocks:
 - **Conv Block 1**: Conv (kernel size ( k x k )) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
