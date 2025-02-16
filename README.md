@@ -2,7 +2,7 @@
 
 ## CNN Architecture Used
 
-<img width="356" alt="image" src="https://github.com/user-attachments/assets/b508d3e5-23a0-430c-ab65-f3ea1dc8bcb0" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/b508d3e5-23a0-430c-ab65-f3ea1dc8bcb0" />
 
 
 
@@ -30,16 +30,17 @@ Training was conducted for **100 epochs**, and the model with the best validatio
 
 ## **Part 1: ReLU as Activation Function**
 
-| Model | Dropout | Kernel Sizes | Best Val Accuracy | Best Test Accuracy |
-|--------|---------|----------------|------------------|------------------|
-| **Model 1** | 0.25 | \( 3\times3,3\times3,3\times3 \) | - | - |
-| **Model 2** | 0.5 | \( 3\times3,3\times3,3\times3 \) | - | - |
-| **Model 3** | 0.75 | \( 3\times3,3\times3,3\times3 \) | - | - |
-| **Model 4** | 0.25 | \( 5\times5,3\times3,3\times3 \) | - | - |
-| **Model 5** | 0.25 | \( 3\times3,3\times3,5\times5 \) | - | - |
-| **Model 6** | 0.25 | \( 1\times1,3\times3,3\times3 \) | - | - |
-| **Model 7** | 0.25 | \( 3\times3,3\times3,1\times1 \) | **82.13%** | **78.35%** |
-| **Model 8** | 0.25 | \( 1\times1,3\times3,5\times5 \) | - | - |
+| Model     | Dropout | Kernel Sizes               | Best Val Accuracy | Best Test Accuracy |
+|-----------|---------|----------------------------|------------------|------------------|
+| **Model 1** | 0.25    | (3×3, 3×3, 3×3)           | -                | -                |
+| **Model 2** | 0.5     | (3×3, 3×3, 3×3)           | -                | -                |
+| **Model 3** | 0.75    | (3×3, 3×3, 3×3)           | -                | -                |
+| **Model 4** | 0.25    | (5×5, 3×3, 3×3)           | -                | -                |
+| **Model 5** | 0.25    | (3×3, 3×3, 5×5)           | -                | -                |
+| **Model 6** | 0.25    | (1×1, 3×3, 3×3)           | -                | -                |
+| **Model 7** | 0.25    | (3×3, 3×3, 1×1)           | **82.13%**       | **78.35%**       |
+| **Model 8** | 0.25    | (1×1, 3×3, 5×5)           | -                | -                |
+
 
 ### **Best Model (ReLU Activation)**: Model 7
 
@@ -80,16 +81,17 @@ Non-trainable params: 448 (1.75 KB)
 
 ## **Part 2: LeakyReLU (0.01) as Activation Function**
 
-| Model | Dropout | Kernel Sizes | Best Val Accuracy | Best Test Accuracy |
-|--------|---------|----------------|------------------|------------------|
-| **Model 1** | 0.3 | \( 3\times3,3\times3,3\times3 \) | - | - |
-| **Model 2** | 0.6 | \( 3\times3,3\times3,3\times3 \) | - | - |
-| **Model 3** | 0.75 | \( 3\times3,3\times3,3\times3 \) | - | - |
-| **Model 4** | 0.3 | \( 5\times5,3\times3,3\times3 \) | - | - |
-| **Model 5** | 0.3 | \( 3\times3,3\times3,5\times5 \) | - | - |
-| **Model 6** | 0.3 | \( 5\times5,5\times5,5\times5 \) | - | - |
-| **Model 7** | 0.3 | \( 1\times1,3\times3,3\times3 \) | **83.15%** | **81.73%** |
-| **Model 8** | 0.3 | \( 3\times3,3\times3,1\times1 \) | - | - |
+| Model     | Dropout | Kernel Sizes               | Best Val Accuracy | Best Test Accuracy |
+|-----------|---------|----------------------------|------------------|------------------|
+| **Model 1** | 0.3     | (3×3, 3×3, 3×3)           | -                | -                |
+| **Model 2** | 0.6     | (3×3, 3×3, 3×3)           | -                | -                |
+| **Model 3** | 0.75    | (3×3, 3×3, 3×3)           | -                | -                |
+| **Model 4** | 0.3     | (5×5, 3×3, 3×3)           | -                | -                |
+| **Model 5** | 0.3     | (3×3, 3×3, 5×5)           | -                | -                |
+| **Model 6** | 0.3     | (5×5, 5×5, 5×5)           | -                | -                |
+| **Model 7** | 0.3     | (1×1, 3×3, 3×3)           | **83.15%**       | **81.73%**       |
+| **Model 8** | 0.3     | (3×3, 3×3, 1×1)           | -                | -                |
+
 
 ### **Best Model (LeakyReLU Activation)**: Model 7
 
