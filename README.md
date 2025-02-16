@@ -10,15 +10,15 @@
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/8f72a97d-c298-49d1-a3aa-87ff630e36e6" />
 
 ### Conv Blocks:
-- **Conv Block 1**: Conv (kernel size \( k \times k \)) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
-- **Conv Block 2**: Conv (kernel size \( k \times k \)) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
-- **Conv Block 3**: Conv (kernel size \( k \times k \)) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
+- **Conv Block 1**: Conv (kernel size ( k x k )) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
+- **Conv Block 2**: Conv (kernel size ( k x k )) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
+- **Conv Block 3**: Conv (kernel size ( k x k )) → BatchNorm → Activation (ReLU or LeakyReLU) → MaxPool
 - **GlobalAveragePooling2D + Fully Connected Layers (Dropout included)**
 - **Softmax Activation for Classification**
 
 ## Experiment Details
 
-We experimented with different kernel sizes \( (k \times k) \) in each Conv Block \( (1\times1, 3\times3, 5\times5) \), different activation functions (**ReLU** or **LeakyReLU**), and different dropout ratios \( (0.25, 0.3, 0.5, 0.6, 0.75) \). The goal was to obtain the best model with the highest test accuracy for the **UCMerced Dataset** (70% Training, 10% Validation, 20% Test).
+We experimented with different kernel sizes (**k x k**)  in each Conv Block (**1x1, 3x3, 5x5**), different activation functions (**ReLU** or **LeakyReLU**), and different dropout ratios  (**0.25, 0.3, 0.5, 0.6, 0.75**) . The goal was to obtain the best model with the highest test accuracy for the **UCMerced Dataset** (**70% Training, 10% Validation, 20% Test**).
 
 
 ---
