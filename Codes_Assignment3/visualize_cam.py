@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Model, Sequential
 from tensorflow.keras.layers import Conv2D, Input, BatchNormalization, Activation, MaxPooling2D, GlobalAveragePooling2D, Dense, Dropout, LeakyRelU
 import cv2
+from Load_Preprocess_Dataset import test_paths
 
 # Choose the best model below
 # *** Rebuild the Model Exactly As Trained ***
@@ -44,7 +45,7 @@ def build_model(input_shape=(128, 128, 3), num_classes=21):
 
 # *** Build the Model and Load Weights ***
 model = build_model()
-model.load_weights("best_model_7.h5")  # Load saved weights
+model.load_weights("best_model.h5")  # Load saved weights
 model.summary()  # PRINT SUMMARY TO CONFIRM LAYER NAMES
 
 # *** Force Initialization with Dummy Input ***
