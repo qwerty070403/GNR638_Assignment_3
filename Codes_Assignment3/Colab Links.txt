@@ -1,0 +1,5 @@
+Part 1: CNN Architecture with ReLU Activation → https://colab.research.google.com/drive/13KHPbInQRBPFz_22U4aOXWz_WgNgXf_B#scrollTo=oWZiyaG-auD7
+
+
+
+Part 2: CNN Architecture with LeakyReLU (0.01) Activation → https://colab.research.google.com/drive/1fI3PFIwaAqyts_JlzwSLjfjLuoGZUoVQ?usp=sharing
