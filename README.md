@@ -28,7 +28,7 @@ We experimented with different kernel sizes (**k x k**)  in each Conv Block (**1
 ---
 
 ## Results
-Training was conducted for **100 epochs**, and the model with the best validation accuracy was selected for testing.
+Training was conducted for **100 epochs** for the last 5 models and **25 epochs** for the first 3 models to find the appropriate dropout, and the model with the best validation accuracy was selected for testing.
 
 ---
 
@@ -36,14 +36,14 @@ Training was conducted for **100 epochs**, and the model with the best validatio
 
 | Model     | Dropout | Kernel Sizes               | Best Val Accuracy | Best Test Accuracy |
 |-----------|---------|----------------------------|------------------|------------------|
-| **Model 1** | 0.25    | (3×3, 3×3, 3×3)           | -                | -                |
-| **Model 2** | 0.5     | (3×3, 3×3, 3×3)           | -                | -                |
-| **Model 3** | 0.75    | (3×3, 3×3, 3×3)           | -                | -                |
-| **Model 4** | 0.25    | (5×5, 3×3, 3×3)           | -                | -                |
-| **Model 5** | 0.25    | (3×3, 3×3, 5×5)           | -                | -                |
-| **Model 6** | 0.25    | (1×1, 3×3, 3×3)           | -                | -                |
+| **Model 1** | 0.25    | (3×3, 3×3, 3×3)           | **66.85%**                | **63.92%**         |
+| **Model 2** | 0.5     | (3×3, 3×3, 3×3)           | **55.73%**               | **50.77%**                |
+| **Model 3** | 0.75    | (3×3, 3×3, 3×3)           | **52.44%**               | **47.68%**               |
+| **Model 4** | 0.25    | (5×5, 3×3, 3×3)           | **80.90%**                | **73.45%**                |
+| **Model 5** | 0.25    | (3×3, 3×3, 5×5)           | **79.17%**                | **75.52%**               |
+| **Model 6** | 0.25    | (1×1, 3×3, 3×3)           | **80.21%**                | **70.91%**                |
 | **Model 7** | 0.25    | (3×3, 3×3, 1×1)           | **82.13%**       | **78.35%**       |
-| **Model 8** | 0.25    | (1×1, 3×3, 5×5)           | -                | -                |
+| **Model 8** | 0.25    | (5×5, 3×3, 1×1)           | **74.48%**                | **66.24%**                |
 
 
 ### **Best Model (ReLU Activation)**: Model 7
@@ -87,14 +87,14 @@ Non-trainable params: 448 (1.75 KB)
 
 | Model     | Dropout | Kernel Sizes               | Best Val Accuracy | Best Test Accuracy |
 |-----------|---------|----------------------------|------------------|------------------|
-| **Model 1** | 0.3     | (3×3, 3×3, 3×3)           | -                | -                |
-| **Model 2** | 0.6     | (3×3, 3×3, 3×3)           | -                | -                |
-| **Model 3** | 0.75    | (3×3, 3×3, 3×3)           | -                | -                |
-| **Model 4** | 0.3     | (5×5, 3×3, 3×3)           | -                | -                |
-| **Model 5** | 0.3     | (3×3, 3×3, 5×5)           | -                | -                |
-| **Model 6** | 0.3     | (5×5, 5×5, 5×5)           | -                | -                |
+| **Model 1** | 0.3     | (3×3, 3×3, 3×3)           |    **61.59%**               |  **58.25%**               |
+| **Model 2** | 0.6     | (3×3, 3×3, 3×3)           | **65.10%**                | **54.12%**               |
+| **Model 3** | 0.75    | (3×3, 3×3, 3×3)           |    **59.95%**              | **55.93%**               |
+| **Model 4** | 0.3     | (5×5, 3×3, 3×3)           | **78.65%**                | **75.52%**               |
+| **Model 5** | 0.3     | (3×3, 3×3, 5×5)           | **78.65%**                | **75.26%**                |
+| **Model 6** | 0.3     | (5×5, 5×5, 5×5)           | **76.67%**                | **69.95%**                |
 | **Model 7** | 0.3     | (1×1, 3×3, 3×3)           | **83.15%**       | **81.73%**       |
-| **Model 8** | 0.3     | (3×3, 3×3, 1×1)           | -                | -                |
+| **Model 8** | 0.3     | (3×3, 3×3, 1×1)           | **76.97%**               | **72.42%**               |
 
 
 ### **Best Model (LeakyReLU Activation)**: Model 7
