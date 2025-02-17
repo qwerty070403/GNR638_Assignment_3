@@ -2,6 +2,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 from Load_Preprocess_Dataset import train_paths, train_gen, val_gen, val_paths, test_paths, test_gen
 from build_model import model
 from tensorflow.keras.models import load_model
+import matplotlib.pyplot as plt
 
 EPOCHS = 25
 
@@ -18,6 +19,22 @@ history = model.fit(
     callbacks=[checkpoint]  # Save best model
 )
 
+
+# Extract accuracy and validation accuracy
+train_acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
+epochs = range(1, len(train_acc) + 1)
+
+# Plot accuracy vs. epoch
+plt.figure(figsize=(8, 5))
+plt.plot(epochs, train_acc, label="Training Accuracy", marker='o')
+plt.plot(epochs, val_acc, label="Validation Accuracy", marker='o')
+plt.xlabel("Epochs")
+plt.ylabel("Accuracy")
+plt.title("Training and Validation Accuracy")
+plt.legend()
+plt.grid(True)
+plt.show()
 
 #Testing Part given below (Test for model with best Val accuracy)
 # Load the best saved model
